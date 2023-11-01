@@ -66,7 +66,7 @@ class Router {
     }
 
     async getFeePancakeSimilar(routerAdd){
-        let routerContract = await new this.web3.eth.Contract( EnumAbi[EnumChainId.XZO].ROUTERS.PANCAKE, routerAdd );
+        let routerContract = await new this.web3.eth.Contract( EnumAbi[EnumChainId.XZO].ROUTERS.EXZOSWAP, routerAdd );
         let factory = await routerContract.methods.factory().call();
         let fee = await routerContract.methods.getAmountOut(10000000, 100000000000, 100000000000).call();
         return parseInt(fee);

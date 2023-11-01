@@ -3,8 +3,8 @@ const EnumChainId = require("./chain.id");
 
 const EnumContracts = {
     [EnumChainId.XZO]: {
-        MAIN_ROUTER: UtilsAddresses.toCheckSum("0x10ED43C718714eb63d5aA57B78B54704E256024E"), // Pancake
-        MAIN_FACTORY: UtilsAddresses.toCheckSum("0xca143ce32fe78f1f7019d7d551a6402fc5350c73") // Pancake
+        MAIN_ROUTER: UtilsAddresses.toCheckSum("0x649795E53A9b69CB76A71f1ad1038039F9c65Ab5"), // ExzoSwap
+        MAIN_FACTORY: UtilsAddresses.toCheckSum("0x2c97D1fd450105cc69E05a4127E425bf4b826264") // ExzoSwap
     }
 };
 

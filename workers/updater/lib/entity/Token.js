@@ -56,12 +56,12 @@ class Token {
     }
     async getBurned( token ){
         try {
-            let tokenContract = await new this.web3.eth.Contract( EnumAbi[EnumChainId.XZO].PAIR.PANCAKE, token );
+            let tokenContract = await new this.web3.eth.Contract( EnumAbi[EnumChainId.XZO].PAIR.EXZOSWAP, token );
             let zeroAddAmount = await tokenContract.methods.balanceOf("0x0000000000000000000000000000000000000000").call();
             let burnAddAmount = await tokenContract.methods.balanceOf("0x000000000000000000000000000000000000dEaD").call();
             return zeroAddAmount + burnAddAmount;
         } catch (error) {
-            console.log(`\t\t[ERR RETRIVING TOKEN BURNED] ${error} `);
+            console.log(`\t\t[ERR RETRIEVING TOKEN BURNED] ${error} `);
         }
         return 0;
     }
