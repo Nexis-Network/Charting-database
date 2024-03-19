@@ -65,7 +65,7 @@ If you know a more efficent way, or any other better than this please let the co
 For anyu bug or issue please report it, i'll try to reply as soon as i can :thumbsup:
 
 
-### Run in Exzo Network
+### Run in Nexis Network
 
 - Specific start block checkpoint to `1738600` in `workers/updater/lib/not-delete.scraped-block.checkpoint.txt`:
 
